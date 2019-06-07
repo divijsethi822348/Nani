@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#fd6038">
+
+
+    <ImageView
+        android:id="@+id/appbar_small_image1"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:src="@drawable/back"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/home"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        android:id="@+id/title_app_bar_small"
+        android:gravity="center"
+        android:layout_toRightOf="@id/appbar_small_image1"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginRight="?attr/actionBarSize"/>
+
+
+
+</RelativeLayout>

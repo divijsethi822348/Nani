@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AboutOneFragment">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/icon_frag_one"/>
+
+    <TextView
+        android:id="@+id/become_a_nani_frag_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_frag_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/"
+        android:gravity="center"
+        android:text="@string/become_a_nani"
+        android:textColor="#000"
+        android:textSize="40dp"
+        app:fontFamily="@font/open_sans" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/become_a_nani_frag_one"
+        android:layout_marginTop="15dp"
+        android:text="@string/lorem_ipsum_dolor"
+        android:id="@+id/lorem_ipsum_dolor_frag_one"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:fontFamily="@font/open_sans"/>
+
+
+
+
+</RelativeLayout>

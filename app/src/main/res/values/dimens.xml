@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="social_card_params">70dp</dimen>
+    <dimen name="social_card_radius">35dp</dimen>
+    <dimen name="et_text_size">14sp</dimen>
+    <dimen name="otp_card_et">50dp</dimen>
+    <dimen name="botttom_navigation_params">30dp</dimen>
+
+</resources>

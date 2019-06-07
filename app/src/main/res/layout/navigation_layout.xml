@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp" android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/navigation_home_background">
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pic"
+            android:id="@+id/nav_pic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amandeep Mall"
+            android:textColor="@color/white"
+            android:layout_below="@id/nav_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nav_name"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_gray"
+            android:layout_below="@+id/nav_name"
+            android:id="@+id/view1"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:text="Home"
+            android:drawableLeft="@drawable/home"
+            android:id="@+id/home"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_gray"
+            android:layout_below="@id/home"
+            android:id="@+id/view2"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:text="My Orders"
+            android:drawableLeft="@drawable/order"
+            android:id="@+id/settings"
+            android:textColor="@color/white"
+            android:paddingLeft="30dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_gray"
+            android:layout_below="@+id/settings"
+            android:id="@+id/view3"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:text="Payment"
+            android:drawableLeft="@drawable/credit_card"
+            android:id="@+id/logout"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="30dp"
+            android:drawablePadding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_gray"
+            android:layout_below="@+id/logout"
+            android:id="@+id/view4"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.NavigationView>

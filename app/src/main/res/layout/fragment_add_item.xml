@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddItemFragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:src="@drawable/add_item_grey_image"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:id="@+id/add_item_upload_image"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_item_recycler_view"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/add_item_et_backgrounds">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/name"
+                    android:textSize="16sp"
+                    android:id="@+id/item_name_t"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:hint="@string/text"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/item_name_et"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/add_item_et_backgrounds"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/description"
+                    android:textSize="16sp"
+                    android:id="@+id/item_description_t"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:hint="@string/text"
+                    android:id="@+id/item_description_et"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/add_item_et_backgrounds"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/list_of_ingredients"
+                    android:textSize="16sp"
+                    android:id="@+id/list_of_ingredients_t"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:hint="@string/text"
+                    android:id="@+id/list_of_ingredients_et"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/add_item_et_backgrounds"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/source_of_meat_products"
+                    android:textSize="16sp"
+                    android:id="@+id/source_of_meat_products_t"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:hint="@string/text"
+                    android:id="@+id/source_of_meat_products_et"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/add_item_et_backgrounds"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/preparation"
+                    android:textSize="16sp"
+                    android:id="@+id/preparation_t"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:hint="@string/text"
+                    android:id="@+id/preparation_et"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/post"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange_solid_button"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/post_button_add_item"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

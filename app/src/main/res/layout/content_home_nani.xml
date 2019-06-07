@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_home_nani">
+    <include
+        layout="@layout/app_bar_large_text"
+        android:id="@+id/app_bar_home_nani"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/app_bar_home_nani"
+        android:src="@drawable/orange_roatte_background"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="-10dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_home_nani_activity"
+        android:layout_below="@+id/app_bar_home_nani"
+        android:layout_above="@+id/bottom_navigation_home_nani_activity">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5"
+        android:id="@+id/bottom_navigation_home_nani_activity"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/home_navigator_nani"
+            android:background="#E3EFF2">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fd6038"
+                android:id="@+id/home_bottom_view_nani"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="@dimen/botttom_navigation_params"
+                    android:layout_height="@dimen/botttom_navigation_params"
+                    android:src="@drawable/home_selected"
+                    android:id="@+id/home_img_nani"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    android:textColor="#fd6038"
+                    android:layout_below="@+id/home_img_nani"
+                    android:id="@+id/home_text_home_nani"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/discover_navigator_nani">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fd6038"
+                android:id="@+id/discover_bottom_view_nani"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="@dimen/botttom_navigation_params"
+                    android:layout_height="@dimen/botttom_navigation_params"
+                    android:src="@drawable/discover_unselected"
+                    android:id="@+id/discover_img_nani"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover"
+                    android:textColor="#AFBFD8"
+                    android:layout_below="@+id/discover_img_nani"
+                    android:id="@+id/discover_text_home_nani"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/profile_navigator_nani">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fd6038"
+                android:id="@+id/profile_bottom_view_nani"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="@dimen/botttom_navigation_params"
+                    android:layout_height="@dimen/botttom_navigation_params"
+                    android:src="@drawable/profile_unselected"
+                    android:id="@+id/profile_img_nani"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:textColor="#AFBFD8"
+                    android:layout_below="@+id/profile_img_nani"
+                    android:id="@+id/profile_text_home_nani"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/setting_navigator_nani">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fd6038"
+                android:id="@+id/setting_bottom_view_nani"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="@dimen/botttom_navigation_params"
+                    android:layout_height="@dimen/botttom_navigation_params"
+                    android:src="@drawable/setting_unselected"
+                    android:id="@+id/setting_img_nani"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings"
+                    android:textColor="#AFBFD8"
+                    android:layout_below="@+id/setting_img_nani"
+                    android:id="@+id/setting_text_home_nani"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        app:riv_corner_radius="7dp"
+        android:id="@+id/add_item_home_nani_activity"/>
+
+</RelativeLayout>

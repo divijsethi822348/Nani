@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OtpVerification"
+    android:id="@+id/otp_layout">
+
+    <ImageView
+        android:id="@+id/logo_otp_verification"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_otp_verification"
+        android:text="@string/a_verification_code"
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:id="@+id/a_verification_code_text_otp"
+        android:fontFamily="@font/open_sans"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/a_verification_code_text_otp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/number_layout_otp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number_otp"
+            android:textColor="#000"
+            android:id="@+id/phone_number_text_otp"
+            android:fontFamily="@font/open_sans"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_91_99999_88888"
+            android:textColor="#fd6038"
+            android:layout_toRightOf="@+id/phone_number_text_otp"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/_91_99999_88888_text_otp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/number_layout_otp"
+        android:text="@string/please_enter_text_otp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:fontFamily="@font/open_sans"
+        android:id="@+id/please_enter_text_otp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_the_verification_code"
+        android:layout_below="@+id/please_enter_text_otp"
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:id="@+id/enter_code_otp"
+        android:textStyle="bold"
+        android:fontFamily="@font/open_sans"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/enter_code_otp"
+        android:id="@+id/otp"
+        android:layout_centerHorizontal="true"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/otp_card_et"
+            android:layout_height="@dimen/otp_card_et"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardCornerRadius="7dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/otp1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/used"
+                android:inputType="number"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/open_sans"
+                android:maxLength="1"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/otp_card_et"
+            android:layout_height="@dimen/otp_card_et"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardCornerRadius="7dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/otp2"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/used"
+                android:inputType="number"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/open_sans"
+                android:maxLength="1"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/otp_card_et"
+            android:layout_height="@dimen/otp_card_et"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardCornerRadius="7dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/otp3"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/used"
+                android:inputType="number"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/open_sans"
+                android:maxLength="1"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/otp_card_et"
+            android:layout_height="@dimen/otp_card_et"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardCornerRadius="7dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/otp4"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/used"
+                android:inputType="number"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/open_sans"
+                android:maxLength="1"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/orange_solid_button"
+        android:textColor="@color/white"
+        android:text="@string/verify"
+        android:id="@+id/verify_button_otp"
+        android:fontFamily="@font/open_sans"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/resend_code"
+        android:layout_below="@+id/verify_button_otp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/resend_code_text_otp"
+        android:fontFamily="@font/open_sans"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

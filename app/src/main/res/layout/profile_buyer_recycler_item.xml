@@ -1,0 +1,38 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="195dp"
+    android:layout_height="110dp"
+    android:padding="15dp"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_buyer_home"
+        android:background="@drawable/shape"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_buyer_recycler_img"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="43 Sector, Chandigarh"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile_buyer_recycler_text"
+        android:layout_below="@+id/profile_buyer_recycler_img"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/app_gray"
+        android:id="@+id/profile_buyer_recycler_view"/>
+
+
+
+</RelativeLayout>

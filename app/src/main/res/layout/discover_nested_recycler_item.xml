@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="@dimen/card_elevation"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/top_layout_discover_nested_recycler_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dp_discover_nested_recycler_item"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/profile_pic_background"
+                android:padding="2dp"
+                android:src="@drawable/pic" />
+
+            <TextView
+                android:id="@+id/name_discover_nested_recycler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/dp_discover_nested_recycler_item"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/ciptasmara"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_discover_nested_recycler_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/dp_discover_nested_recycler_item">
+
+                <ImageView
+                    android:id="@+id/placeholder_discover_nested_recycler_item"
+                    android:layout_width="15dp"
+                    android:layout_height="16sp"
+                    android:src="@drawable/placeholder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/placeholder_discover_nested_recycler_item"
+                    android:text="@string/at_starbucks"
+                    android:textSize="10dp" />
+
+
+            </RelativeLayout>
+
+            <RatingBar
+                android:id="@+id/rating_bar_discover_nested_recycler_item"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:rating="5" />
+
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/food_image_discover_nested_recycler_item"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/top_layout_discover_nested_recycler_item"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/food_image_horizontal_feed_recycler"
+            app:riv_corner_radius="15dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout_discover_nested_recycler_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_image_discover_nested_recycler_item"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/donuts_text_discover_nested_recycler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donuts"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nice_good_discover_nested_recycler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donuts_text_discover_nested_recycler_item"
+                android:layout_marginTop="10dp"
+                android:text="@string/nice_good"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/_discover_nested_recycler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="5 months ago"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/collection_delivery_text_discover_nested_recycler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donuts_text_discover_nested_recycler_item"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/today_text_discover_nested_recycler_item"
+                android:text="@string/collection_delivery"
+                android:textColor="#000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/today_text_discover_nested_recycler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/donuts_text_discover_nested_recycler_item"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/today"
+                android:textColor="#000"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
