@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.nani.Adapters.DiscoverRecyclerAdapter;
 import com.example.nani.R;
@@ -29,10 +30,15 @@ public class DiscoverFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_discover, container, false);
+        setIds(view);
+
+        return view;
+    }
+
+    private void setIds(View view) {
         discover_recycler=view.findViewById(R.id.discover_recycler);
         discover_recycler.setLayoutManager(new LinearLayoutManager(getContext()));
         discover_recycler.setAdapter(new DiscoverRecyclerAdapter(getContext()));
-        return view;
     }
 
 }

@@ -66,4 +66,7 @@
     <string name="post">Post</string>
     <string name="upkar_singh">Upkar Singh</string>
     <string name="edit_account"><u>Edit Account</u></string>
+    <string name="please_signin">Please SignIn or SignUp to Continue</string>
+    <string name="signin">SignIn</string>
+    <string name="my_posts">My Posts :</string>
 </resources>

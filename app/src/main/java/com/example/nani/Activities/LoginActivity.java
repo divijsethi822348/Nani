@@ -71,7 +71,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //                }
                 if (userType.equalsIgnoreCase("Nani")){
                     startActivity(new Intent(LoginActivity.this, HomeNaniActivity.class));
+                    App.getSingleton().setLoggedIn(true);
                 }else if (userType.equalsIgnoreCase("Buyer")){
+                    App.getSingleton().setLoggedIn(true);
                     startActivity(new Intent(LoginActivity.this, HomeBuyerActivity.class));
                 }
 

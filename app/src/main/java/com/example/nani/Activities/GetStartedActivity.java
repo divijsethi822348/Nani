@@ -89,6 +89,7 @@ public class GetStartedActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.buyer_button_get_started:
                 App.getSingleton().setUserType("Buyer");
+                App.getSingleton().setLoggedIn(false);
                 buyer_button.setBackgroundResource(R.drawable.orange_solid_button);
                 buyer_button.setTextColor(Color.parseColor("#FFFFFF"));
                 startActivity(new Intent(GetStartedActivity.this,HomeBuyerActivity.class));

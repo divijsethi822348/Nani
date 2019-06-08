@@ -13,7 +13,7 @@
         android:background="@drawable/shape"
         android:padding="10dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/profile_buyer_recycler_img"
+        android:id="@+id/profile__addresses_recycler_img"
         android:layout_marginTop="10dp"/>
 
     <TextView
@@ -22,8 +22,8 @@
         android:text="43 Sector, Chandigarh"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:id="@+id/profile_buyer_recycler_text"
-        android:layout_below="@+id/profile_buyer_recycler_img"
+        android:id="@+id/profile_addresses_recycler_text"
+        android:layout_below="@+id/profile__addresses_recycler_img"
         />
 
     <View
@@ -31,7 +31,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
         android:background="@color/app_gray"
-        android:id="@+id/profile_buyer_recycler_view"/>
+        android:id="@+id/profile_addresses_recycler_view"/>
 
 
 

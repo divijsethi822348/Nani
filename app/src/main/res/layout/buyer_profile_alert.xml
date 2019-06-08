@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/otp_popup_background">
+
+    <TextView
+        android:id="@+id/please_signin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:text="@string/please_signin"
+        android:textColor="#000" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/please_signin_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/signIn_profile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_solid_button"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/signUp_profile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/signIn_profile"
+            android:background="@drawable/orange_solid_button"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

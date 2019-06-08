@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.example.nani.Fragments.AddItemFragment;
 import com.example.nani.Fragments.DiscoverFragment;
 import com.example.nani.Fragments.HomeFragment;
-import com.example.nani.Fragments.ProfileBuyerFragment;
+import com.example.nani.Fragments.ProfileFragment;
 import com.example.nani.Fragments.SettingFragment;
 import com.example.nani.R;
 import com.makeramen.roundedimageview.RoundedImageView;
@@ -182,7 +182,7 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
                 setting_nani_text.setTextColor(Color.parseColor("#AFBFD8"));
                 setting_view_nani.setVisibility(View.GONE);
                 setting_img_nani.setImageResource(R.drawable.setting_unselected);
-                SelectFragment(new ProfileBuyerFragment());
+                SelectFragment(new ProfileFragment());
                 break;
 
             case R.id.setting_navigator_nani:

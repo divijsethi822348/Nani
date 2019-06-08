@@ -18,6 +18,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.nani.R;
+import com.example.nani.Util.App;
 
 public class OtpVerification extends AppCompatActivity implements View.OnClickListener {
     EditText otp1,otp2,otp3,otp4;
@@ -25,7 +26,7 @@ public class OtpVerification extends AppCompatActivity implements View.OnClickLi
     String otp="";
     RelativeLayout layout;
     private Activity activity;
-
+    String userType="";
 
 
     @Override
@@ -78,7 +79,15 @@ public class OtpVerification extends AppCompatActivity implements View.OnClickLi
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            startActivity(new Intent(OtpVerification.this, HomeNaniActivity.class));
+                            userType= App.getSingleton().getUserType();
+                            if (userType.equalsIgnoreCase("Nani")){
+                                App.getSingleton().setLoggedIn(true);
+                                startActivity(new Intent(OtpVerification.this, HomeNaniActivity.class));
+                            }else if (userType.equalsIgnoreCase("Buyer")){
+                                App.getSingleton().setLoggedIn(true);
+                                startActivity(new Intent(OtpVerification.this, HomeBuyerActivity.class));
+                            }
+
                         }
                     });
                     dialog.show();

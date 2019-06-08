@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/profile_user_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:text="@string/upkar_singh"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_account"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/orange"
+                />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="8dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:padding="15dp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:text="info@omninos.com"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="8dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:padding="15dp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        android:text="@string/_91_99999_88888"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="@dimen/card_elevation"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/profile_card_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Saved Places"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile_card_text"
+                        android:id="@+id/profile_addresses_recycler"
+                        android:layout_marginTop="10dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/my_posts"
+                android:textColor="#000"
+                android:fontFamily="@font/open_sans"
+                android:id="@+id/my_posts_text_profile"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/my_posts_recycler_profile"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:background="@drawable/orange_solid_button"
+                android:textColor="#ffffff"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:id="@+id/profile_logout"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
