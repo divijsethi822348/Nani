@@ -59,6 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/home"
+                    android:fontFamily="@font/open_sans"
                     android:textColor="#fd6038"
                     android:layout_below="@+id/home_img_nani"
                     android:id="@+id/home_text_home_nani"/>
@@ -93,6 +94,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/discover"
                     android:textColor="#AFBFD8"
+                    android:fontFamily="@font/open_sans"
                     android:layout_below="@+id/discover_img_nani"
                     android:id="@+id/discover_text_home_nani"/>
             </RelativeLayout>
@@ -130,6 +132,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/profile"
                     android:textColor="#AFBFD8"
+                    android:fontFamily="@font/open_sans"
                     android:layout_below="@+id/profile_img_nani"
                     android:id="@+id/profile_text_home_nani"/>
             </RelativeLayout>
@@ -163,6 +166,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/settings"
+                    android:fontFamily="@font/open_sans"
                     android:textColor="#AFBFD8"
                     android:layout_below="@+id/setting_img_nani"
                     android:id="@+id/setting_text_home_nani"/>

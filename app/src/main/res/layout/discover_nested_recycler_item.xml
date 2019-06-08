@@ -58,7 +58,8 @@
                     android:layout_marginLeft="3dp"
                     android:layout_toRightOf="@+id/placeholder_discover_nested_recycler_item"
                     android:text="@string/at_starbucks"
-                    android:textSize="10dp" />
+                    android:textSize="10dp"
+                    android:fontFamily="@font/open_sans"/>
 
 
             </RelativeLayout>
@@ -98,6 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/donuts"
+                android:fontFamily="@font/open_sans"
                 android:textColor="#000"
                 android:textSize="13dp"
                 android:textStyle="bold" />
@@ -109,7 +111,8 @@
                 android:layout_below="@+id/donuts_text_discover_nested_recycler_item"
                 android:layout_marginTop="10dp"
                 android:text="@string/nice_good"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
             <TextView
                 android:id="@+id/_discover_nested_recycler_item"
@@ -117,7 +120,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="5 months ago"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
             <TextView
                 android:id="@+id/collection_delivery_text_discover_nested_recycler_item"
@@ -128,7 +132,8 @@
                 android:layout_toLeftOf="@+id/today_text_discover_nested_recycler_item"
                 android:text="@string/collection_delivery"
                 android:textColor="#000"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
             <TextView
                 android:id="@+id/today_text_discover_nested_recycler_item"
@@ -139,7 +144,8 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/today"
                 android:textColor="#000"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
 
         </RelativeLayout>

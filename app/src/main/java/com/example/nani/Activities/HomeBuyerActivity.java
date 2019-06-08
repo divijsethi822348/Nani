@@ -174,7 +174,6 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
             case R.id.profile_navigator_buyer:
                 if (LoggedIn==false){
                     setAlert();
-                    LoggedIn=true;
                 }else if (LoggedIn==true){
                     title_buyer.setText("Profile");
                     home_layout_buyer.setBackgroundColor(Color.parseColor("#FFFFFF"));
@@ -247,14 +246,14 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeBuyerActivity.this,LoginActivity.class));
-
+                LoggedIn=true;
             }
         });
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
              startActivity(new Intent(HomeBuyerActivity.this,SignUpActivity.class));
-
+                LoggedIn=true;
             }
         });
 

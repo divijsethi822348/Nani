@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="General Issues"
+            android:text="@string/general_issues"
             android:padding="15dp"
             android:fontFamily="@font/open_sans"
             android:textColor="#000"
@@ -53,7 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Legal, Terms &amp; Conditions"
+            android:text="@string/legal_terms_amp_conditions"
             android:padding="15dp"
             android:fontFamily="@font/open_sans"
             android:textColor="#000"
@@ -86,7 +86,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="FAQs"
+            android:text="@string/faqs"
             android:padding="15dp"
             android:fontFamily="@font/open_sans"
             android:textColor="#000"

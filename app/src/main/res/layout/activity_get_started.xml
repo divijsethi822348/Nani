@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Who are you?"
+            android:text="@string/who_are_you"
             android:textColor="#000"
             android:textSize="18sp"
             android:id="@+id/whoru_get_started"
@@ -45,7 +45,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nani"
+            android:text="@string/nani"
             android:layout_below="@+id/whoru_get_started"
             android:layout_marginTop="25dp"
             android:layout_marginLeft="50dp"
@@ -59,7 +59,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buyer"
+            android:text="@string/buyer"
             android:layout_below="@+id/whoru_get_started"
             android:layout_marginTop="25dp"
             android:layout_marginRight="50dp"

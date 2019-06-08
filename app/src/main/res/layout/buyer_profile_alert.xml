@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans"
         android:singleLine="true"
         android:text="@string/please_signin"
         android:textColor="#000" />
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/orange_solid_button"
             android:text="@string/sign_in"
+            android:fontFamily="@font/open_sans"
             android:textAllCaps="false"
             android:textColor="@color/white" />
 
@@ -39,6 +41,7 @@
             android:layout_toRightOf="@+id/signIn_profile"
             android:background="@drawable/orange_solid_button"
             android:text="@string/sign_up"
+            android:fontFamily="@font/open_sans"
             android:textAllCaps="false"
             android:textColor="@color/white" />
     </RelativeLayout>

@@ -29,6 +29,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="14sp"
                 android:text="@string/upkar_singh"
+                android:fontFamily="@font/open_sans"
                 android:textColor="#000"
                 android:textStyle="bold"
                 />
@@ -40,7 +41,7 @@
                 android:text="@string/edit_account"
                 android:layout_gravity="center_horizontal"
                 android:textSize="12sp"
-                android:clickable="true"
+                android:fontFamily="@font/open_sans"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/orange"
                 />
@@ -60,7 +61,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email"
+                        android:text="@string/email"
                         android:padding="15dp"
                         android:fontFamily="@font/open_sans"
                         android:textColor="#000"
@@ -72,7 +73,8 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:padding="10dp"
-                        android:text="info@omninos.com"
+                        android:fontFamily="@font/open_sans"
+                        android:text="@string/info_omninos_com"
                         android:layout_centerVertical="true"
                         />
                 </RelativeLayout>
@@ -94,7 +96,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Phone Number"
+                        android:text="@string/phone_number"
                         android:padding="15dp"
                         android:fontFamily="@font/open_sans"
                         android:textColor="#000"
@@ -108,6 +110,7 @@
                         android:layout_alignParentRight="true"
                         android:padding="10dp"
                         android:text="@string/_91_99999_88888"
+                        android:fontFamily="@font/open_sans"
                         android:layout_centerVertical="true"
                         />
                 </RelativeLayout>
@@ -132,7 +135,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:text="Saved Places"
+                        android:text="@string/saved_places"
+                        android:fontFamily="@font/open_sans"
                         android:layout_marginTop="10dp"
                         />
 
@@ -176,13 +180,15 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log Out"
+                android:text="@string/log_out"
+                android:fontFamily="@font/open_sans"
                 android:background="@drawable/orange_solid_button"
                 android:textColor="#ffffff"
                 android:layout_marginTop="40dp"
                 android:layout_marginLeft="80dp"
                 android:layout_marginRight="80dp"
-                android:id="@+id/profile_logout"/>
+                android:id="@+id/profile_logout"
+                android:layout_marginBottom="20dp"/>
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

@@ -60,7 +60,8 @@
                     android:layout_marginLeft="3dp"
                     android:layout_toRightOf="@+id/placeholder_horizontal_feed_item"
                     android:text="@string/at_starbucks"
-                    android:textSize="10dp" />
+                    android:textSize="10dp"
+                    android:fontFamily="@font/open_sans"/>
 
 
             </RelativeLayout>
@@ -102,7 +103,8 @@
                 android:text="@string/donuts"
                 android:textColor="#000"
                 android:textSize="13dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans"/>
 
             <TextView
                 android:id="@+id/nice_good_horizontal_feed_item"
@@ -111,7 +113,8 @@
                 android:layout_below="@+id/donuts_text_horizontal_feed_item"
                 android:layout_marginTop="10dp"
                 android:text="@string/nice_good"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
             <TextView
                 android:id="@+id/_horizontal_feed_item"
@@ -130,7 +133,8 @@
                 android:layout_toLeftOf="@+id/today_text_horizontal_feed_item"
                 android:text="@string/collection_delivery"
                 android:textColor="#000"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
             <TextView
                 android:id="@+id/today_text_horizontal_feed_item"
@@ -141,7 +145,8 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/today"
                 android:textColor="#000"
-                android:textSize="10dp" />
+                android:textSize="10dp"
+                android:fontFamily="@font/open_sans"/>
 
 
         </RelativeLayout>

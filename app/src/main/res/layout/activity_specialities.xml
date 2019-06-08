@@ -104,10 +104,11 @@
         android:layout_marginLeft="120dp"
         android:background="@drawable/orange_solid_button"
         android:textColor="@color/white"
-        android:text="Next"
+        android:text="@string/next2"
         android:textAllCaps="false"
         android:layout_below="@+id/specialities_card_specialities"
         android:layout_marginTop="40dp"
-        android:id="@+id/next_button_specialities"/>
+        android:id="@+id/next_button_specialities"
+        android:fontFamily="@font/open_sans"/>
 
 </RelativeLayout>

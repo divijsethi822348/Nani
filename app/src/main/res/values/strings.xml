@@ -69,4 +69,18 @@
     <string name="please_signin">Please SignIn or SignUp to Continue</string>
     <string name="signin">SignIn</string>
     <string name="my_posts">My Posts :</string>
+    <string name="who_are_you">Who are you?</string>
+    <string name="nani">Nani</string>
+    <string name="buyer">Buyer</string>
+    <string name="next2">Next</string>
+    <string name="info_omninos_com">info@omninos.com</string>
+    <string name="saved_places">Saved Places</string>
+    <string name="log_out">Log Out</string>
+    <string name="general_issues">General Issues</string>
+    <string name="legal_terms_amp_conditions"><![CDATA[Legal, Terms & Conditions]]></string>
+    <string name="faqs">FAQs</string>
+    <string name="amandeep_mall">Amandeep Mall</string>
+    <string name="my_orders">My Orders</string>
+    <string name="payment">Payment</string>
+    <string name="_43_sector_chandigarh">43 Sector, Chandigarh</string>
 </resources>

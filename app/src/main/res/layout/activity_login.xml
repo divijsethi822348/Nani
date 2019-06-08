@@ -138,6 +138,7 @@
                 android:id="@+id/sign_in_button_login"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="@font/open_sans"
                 android:layout_below="@+id/forgot_password_text_login"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="60dp"
