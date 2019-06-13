@@ -11,7 +11,7 @@ import com.example.nani.R;
 public class AddCardActivity extends AppCompatActivity {
     TextView title;
     ImageView back;
-
+//jgdjbj
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
