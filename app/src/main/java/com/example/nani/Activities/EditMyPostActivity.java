@@ -15,7 +15,7 @@ import com.example.nani.R;
 
 public class EditMyPostActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText desc, loi, smp, pia;
+    private EditText desc, loi, smp, pia, aller;
     private Button editBut, saveBut;
     private RecyclerView recyclerView;
     private MyPostEditAdapter myAd;
@@ -44,6 +44,7 @@ public class EditMyPostActivity extends AppCompatActivity implements View.OnClic
         loi = findViewById(R.id.my_post_edit_loi);
         smp = findViewById(R.id.my_post_edit_smp);
         pia = findViewById(R.id.my_post_edit_pia);
+        aller = findViewById(R.id.my_post_edit_aller);
         editBut = findViewById(R.id.edit_btn_my_post);
         saveBut = findViewById(R.id.save_btn_my_post);
         saveBut.setVisibility(View.GONE);
@@ -70,6 +71,7 @@ public class EditMyPostActivity extends AppCompatActivity implements View.OnClic
                 loi.setEnabled(true);
                 smp.setEnabled(true);
                 pia.setEnabled(true);
+                aller.setEnabled(true);
                 showCloseImage = true;
                 myAd.notifyDataSetChanged();
                 break;
@@ -80,6 +82,7 @@ public class EditMyPostActivity extends AppCompatActivity implements View.OnClic
                 loi.setEnabled(false);
                 smp.setEnabled(false);
                 pia.setEnabled(false);
+                aller.setEnabled(false);
                 showCloseImage = false;
                 myAd.notifyDataSetChanged();
                 break;
