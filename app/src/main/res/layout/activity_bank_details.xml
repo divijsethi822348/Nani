@@ -24,6 +24,19 @@
                 android:layout_marginTop="35dp"
                 android:src="@drawable/logo" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nani's Bank Account"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/logo_bank_details"
+                android:id="@+id/nani_bank_details"
+                android:layout_marginTop="15dp"
+
+                />
+
 
             <LinearLayout
                 android:id="@+id/bank_name_bank_details"
@@ -31,9 +44,9 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="25dp"
                 android:orientation="vertical"
-                android:layout_below="@+id/logo_bank_details">
+                android:layout_below="@+id/nani_bank_details">
 
                 <TextView
                     android:id="@+id/bank_name_text_bank_details"
