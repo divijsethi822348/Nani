@@ -61,12 +61,12 @@
     <string name="description">Description</string>
     <string name="text">Text..</string>
     <string name="list_of_ingredients">List of Ingredients</string>
-    <string name="source_of_meat_products">Source of meat Products</string>
+    <string name="source_of_meat_products">Source of Meat Products</string>
     <string name="preparation">Preparation Instructions</string>
     <string name="post">Post</string>
     <string name="upkar_singh">Upkar Singh</string>
     <string name="edit_account"><u>Edit Account</u></string>
-    <string name="please_signin">Please SignIn or SignUp to Continue</string>
+    <string name="please_signin">Please Sign In or Sign Up to Continue</string>
     <string name="signin">SignIn</string>
     <string name="my_posts">My Posts :</string>
     <string name="who_are_you">Who are you?</string>

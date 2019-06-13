@@ -37,7 +37,7 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
     DrawerLayout drawerLayout_buyer;
     Activity activity;
     Boolean LoggedIn;
-    TextView nav_my_orders,nav_payment,nav_home;
+    TextView nav_my_orders,nav_payment,nav_home,switch_sides;
 
 
     @Override
@@ -46,6 +46,7 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_home_buyer);
         LoggedIn= App.getSingleton().getLoggedIn();
         inintIds();
+        switch_sides.setText("Switch to Nani");
         setClicks();
         SelectFragment(new HomeFragment());
         setNavigationDrawer();
@@ -114,6 +115,7 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
         nav_my_orders =findViewById(R.id.my_orders);
         nav_home=findViewById(R.id.home);
         nav_payment=findViewById(R.id.payment);
+        switch_sides=findViewById(R.id.switch_sides);
 
 
 
@@ -128,6 +130,7 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
         navigation_image_buyer.setOnClickListener(this);
         nav_my_orders.setOnClickListener(this);
         nav_payment.setOnClickListener(this);
+        switch_sides.setOnClickListener(this);
 
     }
 
@@ -250,6 +253,11 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
                 drawerLayout_buyer.closeDrawers();
                 startActivity(new Intent(HomeBuyerActivity.this,PaymentBuyerActivity.class));
                 break;
+            case R.id.switch_sides:
+                App.getSingleton().setUserType("Nani");
+                startActivity(new Intent(HomeBuyerActivity.this,LoginActivity.class));
+                break;
+
 
 
         }

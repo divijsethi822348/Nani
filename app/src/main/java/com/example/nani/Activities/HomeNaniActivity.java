@@ -22,6 +22,7 @@ import com.example.nani.Fragments.HomeFragment;
 import com.example.nani.Fragments.ProfileFragment;
 import com.example.nani.Fragments.SettingFragment;
 import com.example.nani.R;
+import com.example.nani.Util.App;
 import com.makeramen.roundedimageview.RoundedImageView;
 
 public class HomeNaniActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,7 +33,7 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
     View home_view_nani, discover_view_nani, profile_view_nani, setting_view_nani;
     DrawerLayout drawerLayout_nani;
     RoundedImageView add_item;
-    TextView nav_my_orders,nav_payment;
+    TextView nav_my_orders,nav_payment,switch_sides;
 
 
 
@@ -41,6 +42,7 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_nani);
         inintIds();
+        switch_sides.setText("Switch to Buyer");
         setClicks();
         SelectFragment(new HomeFragment());
         setNavigationDrawer();
@@ -107,6 +109,7 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
         search_nani=findViewById(R.id.appbar_large_image3);
         nav_my_orders=findViewById(R.id.my_orders);
         nav_payment=findViewById(R.id.payment);
+        switch_sides=findViewById(R.id.switch_sides);
 
 
     }
@@ -121,6 +124,7 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
         notifications_nani.setOnClickListener(this);
         nav_my_orders.setOnClickListener(this);
         nav_payment.setOnClickListener(this);
+        switch_sides.setOnClickListener(this);
 
     }
 
@@ -259,6 +263,11 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
             case R.id.payment:
                 drawerLayout_nani.closeDrawers();
                 startActivity(new Intent(HomeNaniActivity.this,PaymentNaniActivity.class));
+                break;
+
+            case R.id.switch_sides:
+                App.getSingleton().setUserType("Buyer");
+                startActivity(new Intent(HomeNaniActivity.this,LoginActivity.class));
                 break;
 
 

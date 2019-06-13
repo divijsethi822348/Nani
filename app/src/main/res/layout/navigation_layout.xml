@@ -81,13 +81,36 @@
             android:layout_marginLeft="60dp"/>
 
         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:text="@string/payment"
+        android:fontFamily="@font/open_sans"
+        android:drawableLeft="@drawable/credit_card"
+        android:id="@+id/payment"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:drawablePadding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_gray"
+            android:layout_below="@+id/payment"
+            android:id="@+id/view4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/view3"
-            android:text="@string/payment"
+            android:layout_below="@id/view4"
+            android:text="Switch to "
             android:fontFamily="@font/open_sans"
-            android:drawableLeft="@drawable/credit_card"
-            android:id="@+id/payment"
+            android:drawableLeft="@drawable/ic_switch_sides"
+            android:id="@+id/switch_sides"
             android:textColor="@color/white"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -98,11 +121,10 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/app_gray"
-            android:layout_below="@+id/logout"
-            android:id="@+id/view4"
+            android:layout_below="@+id/switch_sides"
+            android:id="@+id/view5"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="60dp"/>
-
 
 
 
