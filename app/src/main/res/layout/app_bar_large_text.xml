@@ -34,6 +34,15 @@
         android:layout_alignParentRight="true"
         android:id="@+id/appbar_large_image2"
         />
+    <ImageView
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:src="@drawable/search"
+        android:layout_alignParentRight="true"
+        android:id="@+id/appbar_large_image3"
+        />
 
 
 </RelativeLayout>

@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.nani.R;
 import com.example.nani.Util.App;
+import com.example.nani.Util.Login_Logout;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     Button sign_in;
@@ -71,6 +72,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //                }
                 if (userType.equalsIgnoreCase("Nani")){
                     startActivity(new Intent(LoginActivity.this, HomeNaniActivity.class));
+                    Login_Logout.SaveToken(LoginActivity.this);
                     App.getSingleton().setLoggedIn(true);
                 }else if (userType.equalsIgnoreCase("Buyer")){
                     App.getSingleton().setLoggedIn(true);
@@ -90,6 +92,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     eye.setImageResource(R.drawable.invisible);
                 }
                 count++;
+                break;
         }
     }
 }

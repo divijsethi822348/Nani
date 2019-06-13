@@ -45,7 +45,8 @@
             android:textColor="@color/white"
             android:drawablePadding="10dp"
             android:paddingLeft="30dp"
-            android:layout_marginTop="10dp"/>
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
 
 
         <View
@@ -54,7 +55,6 @@
             android:background="@color/app_gray"
             android:layout_below="@id/home"
             android:id="@+id/view2"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="60dp"/>
 
@@ -65,18 +65,18 @@
             android:text="@string/my_orders"
             android:fontFamily="@font/open_sans"
             android:drawableLeft="@drawable/order"
-            android:id="@+id/settings"
+            android:id="@+id/my_orders"
             android:textColor="@color/white"
             android:paddingLeft="30dp"
             android:drawablePadding="10dp"
-            android:layout_marginTop="20dp"/>
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/app_gray"
-            android:layout_below="@+id/settings"
+            android:layout_below="@+id/my_orders"
             android:id="@+id/view3"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="60dp"/>
 
@@ -87,9 +87,10 @@
             android:text="@string/payment"
             android:fontFamily="@font/open_sans"
             android:drawableLeft="@drawable/credit_card"
-            android:id="@+id/logout"
+            android:id="@+id/payment"
             android:textColor="@color/white"
-            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:paddingLeft="30dp"
             android:drawablePadding="10dp"/>
 
@@ -99,7 +100,6 @@
             android:background="@color/app_gray"
             android:layout_below="@+id/logout"
             android:id="@+id/view4"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="60dp"/>
 

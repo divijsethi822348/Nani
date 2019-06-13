@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -77,14 +79,17 @@ public class OtpVerification extends AppCompatActivity implements View.OnClickLi
                     dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                     Button button=congDialogBox.findViewById(R.id.verify_otp_popup);
                     button.setOnClickListener(new View.OnClickListener() {
+                        @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
                         @Override
                         public void onClick(View v) {
                             userType= App.getSingleton().getUserType();
                             if (userType.equalsIgnoreCase("Nani")){
                                 App.getSingleton().setLoggedIn(true);
+                                finishAffinity();
                                 startActivity(new Intent(OtpVerification.this, HomeNaniActivity.class));
                             }else if (userType.equalsIgnoreCase("Buyer")){
                                 App.getSingleton().setLoggedIn(true);
+                                finishAffinity();
                                 startActivity(new Intent(OtpVerification.this, HomeBuyerActivity.class));
                             }
 

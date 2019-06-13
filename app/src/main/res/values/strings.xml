@@ -83,4 +83,21 @@
     <string name="my_orders">My Orders</string>
     <string name="payment">Payment</string>
     <string name="_43_sector_chandigarh">43 Sector, Chandigarh</string>
+    <string name="hiden">**********</string>
+    <string name="save">Save</string>
+    <string name="set_delivery_address">Set Delivery Address</string>
+    <string name="location">Location</string>
+    <string name="area_code">Area Code</string>
+    <string name="_160055">160055</string>
+    <string name="confirming_order">Confirming Order with nani</string>
+    <string name="food_is_being_prepared">Food is being prepared</string>
+    <string name="courier_is_on_the_way">Courier is on the way</string>
+    <string name="food_delivered">Food Delivered. Time to eat</string>
+    <string name="cart">Cart</string>
+    <string name="nani_s_special">Nani\'s Special</string>
+    <string name="spring_roll">Spring Roll</string>
+    <string name="_15_00">$15.00</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="proceed_to_pay">Proceed To Pay</string>
 </resources>

@@ -11,14 +11,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.nani.Activities.EditProfileActivity;
 import com.example.nani.Activities.HomeBuyerActivity;
 import com.example.nani.Activities.LoginActivity;
 import com.example.nani.Adapters.ProfileAddressesRecyclerAdapter;
 import com.example.nani.Adapters.ProfileMyPostsRecyclerAdapter;
 import com.example.nani.R;
 import com.example.nani.Util.App;
+import com.example.nani.Util.Login_Logout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +31,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
     Button log_out;
     String userTpe="";
     TextView my_posts;
+    TextView edit_account;
 
 
     public ProfileFragment() {
@@ -46,6 +50,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
 
     private void setClicks() {
         log_out.setOnClickListener(this);
+        edit_account.setOnClickListener(this);
     }
 
     private void setIds(View view) {
@@ -66,6 +71,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             my_posts.setVisibility(View.GONE);
             my_posts_recycler.setVisibility(View.GONE);
         }
+        edit_account=view.findViewById(R.id.edit_account_text_click);
 
 
     }
@@ -74,13 +80,18 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.profile_logout:
-
+                Login_Logout.Logout(getActivity());
                 App.getSingleton().setLoggedIn(false);
                 if (userTpe.equalsIgnoreCase("Nani")){
                     startActivity(new Intent(getActivity(), LoginActivity.class));
                 }else if (userTpe.equalsIgnoreCase("Buyer")){
                     startActivity(new Intent(getActivity(), HomeBuyerActivity.class));
                 }
+                break;
+
+            case R.id.edit_account_text_click:
+                startActivity(new Intent(getActivity(), EditProfileActivity.class));
+                break;
         }
     }
 }

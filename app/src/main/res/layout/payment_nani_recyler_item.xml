@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/all_payments_recycler_pp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/profile_pic_background"
+        android:padding="2dp"
+        android:src="@drawable/profile_user_image" />
+
+    <TextView
+        android:id="@+id/all_payments_recycler_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/all_payments_recycler_pp"
+        android:fontFamily="@font/open_sans"
+        android:text="Ciptasmara"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/all_payments_recycler_nani_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_payments_recycler_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/all_payments_recycler_pp"
+        android:drawableLeft="@drawable/placeholder_medium"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/at_starbucks"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#000"
+        android:id="@+id/all_payments_value"
+        android:layout_toLeftOf="@id/all_payments_dollar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="#000"
+        android:layout_alignParentRight="true"
+        android:id="@+id/all_payments_dollar"
+        android:layout_centerVertical="true"
+
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/app_gray"
+        android:layout_below="@id/all_payments_recycler_pp"
+        android:layout_marginTop="10dp">
+
+    </View>
+
+</RelativeLayout>
+
+

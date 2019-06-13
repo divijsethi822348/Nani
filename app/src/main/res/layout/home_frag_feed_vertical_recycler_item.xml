@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="20dp"
     app:cardCornerRadius="8dp"
-    android:elevation="@dimen/card_elevation">
+    android:elevation="@dimen/card_elevation"
+    android:id="@+id/vertical_feed_card_item">
 
     <RelativeLayout
         android:layout_width="match_parent"

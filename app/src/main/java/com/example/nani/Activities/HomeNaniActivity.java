@@ -28,10 +28,11 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
     FrameLayout homeFrameNani;
     RelativeLayout home_nani_layout, discover_nani_layout,profile_nani_layout, setting_nani_layout, content_home_nani;
     TextView home_text_nani, discover_nani_text, profile_nani_text, setting_nani_text, title_nani;
-    ImageView home_img_nani, discover_img_nani, profile_img_nani, setting_img_nani, navigation_image_nani, notifications_nani;
+    ImageView home_img_nani, discover_img_nani, profile_img_nani, setting_img_nani, navigation_image_nani, notifications_nani,search_nani;
     View home_view_nani, discover_view_nani, profile_view_nani, setting_view_nani;
     DrawerLayout drawerLayout_nani;
     RoundedImageView add_item;
+    TextView nav_my_orders,nav_payment;
 
 
 
@@ -103,7 +104,9 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
         content_home_nani =findViewById(R.id.content_home_nani);
         notifications_nani =findViewById(R.id.appbar_large_image2);
         title_nani =findViewById(R.id.title_app_bar_large);
-
+        search_nani=findViewById(R.id.appbar_large_image3);
+        nav_my_orders=findViewById(R.id.my_orders);
+        nav_payment=findViewById(R.id.payment);
 
 
     }
@@ -116,6 +119,8 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
         add_item.setOnClickListener(this);
         navigation_image_nani.setOnClickListener(this);
         notifications_nani.setOnClickListener(this);
+        nav_my_orders.setOnClickListener(this);
+        nav_payment.setOnClickListener(this);
 
     }
 
@@ -124,6 +129,8 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
         switch (v.getId()){
             case R.id.home_navigator_nani:
                 title_nani.setText("Home");
+                notifications_nani.setVisibility(View.VISIBLE);
+                search_nani.setVisibility(View.GONE);
                 home_nani_layout.setBackgroundColor(Color.parseColor("#E3EFF2"));
                 home_text_nani.setTextColor(Color.parseColor("#fd6038"));
                 home_view_nani.setVisibility(View.VISIBLE);
@@ -145,6 +152,8 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
 
             case R.id.discover_navigator_nani:
                 title_nani.setText("Discover");
+                notifications_nani.setVisibility(View.GONE);
+                search_nani.setVisibility(View.VISIBLE);
                 home_nani_layout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 home_text_nani.setTextColor(Color.parseColor("#AFBFD8"));
                 home_view_nani.setVisibility(View.GONE);
@@ -166,6 +175,8 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
 
             case R.id.profile_navigator_nani:
                 title_nani.setText("Profile");
+                notifications_nani.setVisibility(View.VISIBLE);
+                search_nani.setVisibility(View.GONE);
                 home_nani_layout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 home_text_nani.setTextColor(Color.parseColor("#AFBFD8"));
                 home_view_nani.setVisibility(View.GONE);
@@ -187,6 +198,8 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
 
             case R.id.setting_navigator_nani:
                 title_nani.setText("Setting");
+                notifications_nani.setVisibility(View.VISIBLE);
+                search_nani.setVisibility(View.GONE);
                 home_nani_layout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 home_text_nani.setTextColor(Color.parseColor("#AFBFD8"));
                 home_view_nani.setVisibility(View.GONE);
@@ -208,6 +221,9 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
 
             case R.id.add_item_home_nani_activity:
                 title_nani.setText("Add item");
+                notifications_nani.setImageResource(R.drawable.notification);
+                notifications_nani.setVisibility(View.VISIBLE);
+                search_nani.setVisibility(View.GONE);
                 home_nani_layout.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 home_text_nani.setTextColor(Color.parseColor("#AFBFD8"));
                 home_view_nani.setVisibility(View.GONE);
@@ -233,6 +249,17 @@ public class HomeNaniActivity extends AppCompatActivity implements View.OnClickL
 
             case R.id.appbar_large_image2:
                 startActivity(new Intent(HomeNaniActivity.this,NotificationsActivity.class));
+                break;
+
+            case R.id.my_orders:
+                drawerLayout_nani.closeDrawers();
+                startActivity(new Intent(HomeNaniActivity.this,MyOrdersNani.class));
+                break;
+
+            case R.id.payment:
+                drawerLayout_nani.closeDrawers();
+                startActivity(new Intent(HomeNaniActivity.this,PaymentNaniActivity.class));
+                break;
 
 
 

@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:elevation="@dimen/card_elevation"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="8dp"
+    android:id="@+id/discover_item">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -72,7 +73,10 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:isIndicator="true"
-                android:rating="5" />
+                android:rating="5"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:layout_marginRight="-10dp"/>
 
         </RelativeLayout>
 

@@ -32,12 +32,12 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
     FrameLayout homeFrameBuyer;
     RelativeLayout home_layout_buyer, discover_layout_buyer, profile_layout_buyer, setting_layout_buyer, content_home_buyer;
     TextView home_text_buyer, discover_text_buyer, profile_text_buyer, setting_text_buyer, title_buyer;
-    ImageView home_img_buyer, discover_img_buyer, profile_img_buyer, setting_img_buyer, navigation_image_buyer, notifications_buyer,rightAppBarImage;
+    ImageView home_img_buyer, discover_img_buyer, profile_img_buyer, setting_img_buyer, navigation_image_buyer, notifications_buyer, notificationAppBarImage,search_app_bar;
     View home_view_buyer, discover_view_buyer, profile_view_buyer, setting_view_buyer;
     DrawerLayout drawerLayout_buyer;
     Activity activity;
     Boolean LoggedIn;
-
+    TextView nav_my_orders,nav_payment,nav_home;
 
 
     @Override
@@ -108,8 +108,12 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
         content_home_buyer =findViewById(R.id.content_home_buyer);
         notifications_buyer =findViewById(R.id.appbar_large_image2);
         title_buyer =findViewById(R.id.title_app_bar_large);
-        rightAppBarImage=findViewById(R.id.appbar_large_image2);
+        notificationAppBarImage =findViewById(R.id.appbar_large_image2);
+        search_app_bar=findViewById(R.id.appbar_large_image3);
         activity=HomeBuyerActivity.this;
+        nav_my_orders =findViewById(R.id.my_orders);
+        nav_home=findViewById(R.id.home);
+        nav_payment=findViewById(R.id.payment);
 
 
 
@@ -122,6 +126,8 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
         setting_layout_buyer.setOnClickListener(this);
         notifications_buyer.setOnClickListener(this);
         navigation_image_buyer.setOnClickListener(this);
+        nav_my_orders.setOnClickListener(this);
+        nav_payment.setOnClickListener(this);
 
     }
 
@@ -130,6 +136,8 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
         switch (v.getId()){
             case R.id.home_navigator_buyer:
                 title_buyer.setText("Home");
+                notificationAppBarImage.setVisibility(View.VISIBLE);
+                search_app_bar.setVisibility(View.GONE);
                 home_layout_buyer.setBackgroundColor(Color.parseColor("#E3EFF2"));
                 home_text_buyer.setTextColor(Color.parseColor("#fd6038"));
                 home_view_buyer.setVisibility(View.VISIBLE);
@@ -151,7 +159,8 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.discover_navigator_buyer:
                 title_buyer.setText("Discover");
-                rightAppBarImage.setImageResource(R.drawable.search);
+                notificationAppBarImage.setVisibility(View.GONE);
+                search_app_bar.setVisibility(View.VISIBLE);
                 home_layout_buyer.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 home_text_buyer.setTextColor(Color.parseColor("#AFBFD8"));
                 home_view_buyer.setVisibility(View.GONE);
@@ -176,6 +185,8 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
                     setAlert();
                 }else if (LoggedIn==true){
                     title_buyer.setText("Profile");
+                    notificationAppBarImage.setVisibility(View.VISIBLE);
+                    search_app_bar.setVisibility(View.GONE);
                     home_layout_buyer.setBackgroundColor(Color.parseColor("#FFFFFF"));
                     home_text_buyer.setTextColor(Color.parseColor("#AFBFD8"));
                     home_view_buyer.setVisibility(View.GONE);
@@ -200,6 +211,8 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.setting_navigator_buyer:
                 title_buyer.setText("Settings");
+                notificationAppBarImage.setVisibility(View.VISIBLE);
+                search_app_bar.setVisibility(View.GONE);
                 home_layout_buyer.setBackgroundColor(Color.parseColor("#FFFFFF"));
                 home_text_buyer.setTextColor(Color.parseColor("#AFBFD8"));
                 home_view_buyer.setVisibility(View.GONE);
@@ -226,7 +239,17 @@ public class HomeBuyerActivity extends AppCompatActivity implements View.OnClick
 
             case R.id.appbar_large_image2:
                 startActivity(new Intent(HomeBuyerActivity.this,NotificationsActivity.class));
+                break;
 
+            case R.id.my_orders:
+                drawerLayout_buyer.closeDrawers();
+                startActivity(new Intent(HomeBuyerActivity.this,MyOrdersBuyer.class));
+                break;
+
+            case R.id.payment:
+                drawerLayout_buyer.closeDrawers();
+                startActivity(new Intent(HomeBuyerActivity.this,PaymentBuyerActivity.class));
+                break;
 
 
         }

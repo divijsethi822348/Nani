@@ -9,7 +9,7 @@ public class AppPreferences {
     private SharedPreferences sharedPreferences;
 
     private AppPreferences(Context context) {
-        sharedPreferences = context.getSharedPreferences("FreshUp", Context.MODE_PRIVATE);
+        sharedPreferences = context.getSharedPreferences("Nani", Context.MODE_PRIVATE);
     }
 
     public static AppPreferences init(Context context) {

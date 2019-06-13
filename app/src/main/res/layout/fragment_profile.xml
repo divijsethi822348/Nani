@@ -44,7 +44,7 @@
                 android:fontFamily="@font/open_sans"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/orange"
-                />
+                android:id="@+id/edit_account_text_click"/>
 
 
             <android.support.v7.widget.CardView
