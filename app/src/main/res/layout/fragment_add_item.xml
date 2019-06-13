@@ -101,11 +101,13 @@
 
             </LinearLayout>
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:orientation="vertical"
                 android:background="@drawable/add_item_et_backgrounds"
@@ -135,6 +137,14 @@
                     />
 
             </LinearLayout>
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/contains_meat_products"
+                android:id="@+id/contains_meat_products_check"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -144,7 +154,8 @@
                 android:layout_marginRight="20dp"
                 android:orientation="vertical"
                 android:background="@drawable/add_item_et_backgrounds"
-                >
+                android:id="@+id/contains_meat_products_layout"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -202,6 +213,41 @@
                     android:hint="@string/text"
                     android:fontFamily="@font/open_sans"
                     android:id="@+id/preparation_et"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/add_item_et_backgrounds"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/allergies"
+                    android:textSize="16sp"
+                    android:id="@+id/allergies_t"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:hint="@string/text"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/allergies_et"
                     />
 
             </LinearLayout>
