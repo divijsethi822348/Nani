@@ -26,6 +26,7 @@ public class DiscoverRecyclerAdapter extends RecyclerView.Adapter<DiscoverRecycl
 
     @Override
     public void onBindViewHolder(@NonNull Holder holder, int i) {
+        holder.isRecyclable();
 
     }
 

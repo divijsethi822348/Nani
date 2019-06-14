@@ -19,7 +19,6 @@ public class ChooseAddressActivity extends AppCompatActivity implements View.OnC
     Button procced_to_pay;
     ImageView back;
     ChooseAddressActivity activity;
-    int quantite;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,27 +63,7 @@ public class ChooseAddressActivity extends AppCompatActivity implements View.OnC
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         final TextView quantity=congDialogBox.findViewById(R.id.quantity_text_cart);
         Button pay=congDialogBox.findViewById(R.id.pay_btn_cart_dialog);
-        Button add=congDialogBox.findViewById(R.id.add_quantity_cart);
-        Button minus=congDialogBox.findViewById(R.id.minus_quantity_cart);
-        add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quantite=Integer.parseInt(quantity.getText().toString());
-                quantite++;
-                quantity.setText(String.valueOf(quantite));
-            }
-        });
-        minus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                quantite=Integer.parseInt(quantity.getText().toString());
-                if (quantite>0)
-                {
-                    quantite--;
-                    quantity.setText(String.valueOf(quantite));
-                }
-            }
-        });
+
         pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

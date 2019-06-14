@@ -89,10 +89,10 @@
     <string name="location">Location</string>
     <string name="area_code">Area Code</string>
     <string name="_160055">160055</string>
-    <string name="confirming_order">Confirming Order with Nani</string>
-    <string name="food_is_being_prepared">Food is being prepared</string>
-    <string name="courier_is_on_the_way">Courier is on the way</string>
-    <string name="food_delivered">Food Delivered. Time to eat</string>
+    <string name="confirming_order">Confirming Your Order With Nani</string>
+    <string name="food_is_being_prepared">Your Order Is Being Prepared</string>
+    <string name="courier_is_on_the_way">Courier Is On It\'s Way</string>
+    <string name="food_delivered">Order Delivered. Enjoy!</string>
     <string name="cart">Cart</string>
     <string name="nani_s_special">Nani\'s Special</string>
     <string name="spring_roll">Spring Roll</string>

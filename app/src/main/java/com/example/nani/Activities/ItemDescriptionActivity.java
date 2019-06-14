@@ -78,7 +78,7 @@ public class ItemDescriptionActivity extends AppCompatActivity implements View.O
 
             case R.id.item_desc_decrement:
                 quantity=Integer.parseInt(text.getText().toString());
-                if(quantity>0) {
+                if(quantity>1) {
                     quantity = quantity - 1;
                     text.setText(quantity + "");
                 }

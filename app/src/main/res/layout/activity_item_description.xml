@@ -145,9 +145,79 @@
                     android:text="This is android layout version of lorem ipsum. Proin gravida nibh vel velit auctor aliquet"
                     android:textColor="#000000"
                     android:textSize="14dp"
-
-
                     />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_gray"
+                    android:layout_marginVertical="8dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Quantity Available:"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="8 pcs"
+                        android:textColor="@color/orange"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/app_gray"
+                    android:layout_marginVertical="8dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Quantity Per Item:"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:text="2 pcs"
+                        android:textColor="@color/orange"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+
+
+                </LinearLayout>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -292,13 +362,14 @@
                     android:text="+"
                     android:textColor="@color/orange"
                     android:textSize="28dp"
+                    android:layout_toRightOf="@id/item_desc_quantity"
 
                     />
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:id="@+id/item_desc_quantity"
-                    android:layout_toRightOf="@+id/item_desc_increment"
+                    android:layout_toRightOf="@+id/item_desc_decrement"
                     android:text="1"
                     android:layout_centerInParent="true"
                     android:gravity="center"
@@ -314,7 +385,6 @@
                     android:layout_height="45dp"
                     android:background="@drawable/orange_stroke_button"
                     android:id="@+id/item_desc_decrement"
-                    android:layout_toRightOf="@id/item_desc_quantity"
                     android:gravity="center"
                     android:text="-"
                     android:textSize="28dp"
